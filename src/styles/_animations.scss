@@ -1,0 +1,33 @@
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes background {
+    0% {
+        background-position: 0% 50%
+    }
+
+    100% {
+        background-position: 100% 50%
+    }
+}
+.left-enter,.right-enter{
+    opacity: 0;
+}
+.left-enter {
+    transform: translateX(-600px);
+}
+.right-enter {
+    transform: translateX(600px);
+}
+.right-enter-active,.left-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 500ms ease-in;
+}

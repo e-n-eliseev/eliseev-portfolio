@@ -1,0 +1,15 @@
+%picture {
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+%flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin font($size,$color,$weight) {
+    font-size:$size;
+    color: $color;
+    font-weight: $weight;
+}

@@ -1,0 +1,56 @@
+.about {
+    min-height: 100vh;
+    @extend %flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 160px 0 0 0;
+    text-align: center;
+    padding: 0 10px;
+
+    &__photo {
+        width: $avatar-size;
+        height: $avatar-size;
+        @extend %picture;
+        @extend %flex;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(145deg, $gradient-text-color 30%, #9d6c93 50%, $focused-text-color 70%);
+            animation: 5s rotate infinite;
+        }
+    }
+
+    &__photo-wrapper {
+        @extend %picture;
+        width: $avatar-size - 20;
+        height: $avatar-size - 20;
+    }
+
+    &__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    &__heading {
+        background-image: linear-gradient(to right, $middle-text-color, $gradient-text-color, $focused-text-color, $middle-text-color);
+        background-size: 1000% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: background 5s linear infinite;
+        @include font($main-heading-text, transparent, 700);
+        margin: 50px 0;
+    }
+
+    &__text {
+        @include font($plain-text, $plain-text-color, 500);
+        text-transform: uppercase;
+    }
+}
+
