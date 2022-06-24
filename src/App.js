@@ -4,6 +4,8 @@ import "./styles/app.scss";
 import { lazy } from "react";
 const TechStack = lazy(() => import("./components/techStack/TechStack"));
 const PetProjects = lazy(() => import("./components/petProjects/PetProjects"));
+const Certificates = lazy(() => import("./components/certificates/Certificates"));
+const Contacts = lazy(() => import("./components/contacts/Contacts"));
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
       <About />
       <TechStack />
       <PetProjects />
+      <Certificates />
+      <Contacts />
     </div>
   );
 }

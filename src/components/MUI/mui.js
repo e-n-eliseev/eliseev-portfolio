@@ -15,6 +15,7 @@ export const theme = createTheme({
             styleOverrides: {
                 root: {
                     minWidth: "120px",
+                    marginBottom: "10px"
                 }
             }
         },

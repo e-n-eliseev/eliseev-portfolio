@@ -1,0 +1,16 @@
+.certificates {
+    &__item {
+        justify-content: space-between;
+        align-items: baseline;
+        text-align: initial;
+        width: $projects-item-size;
+        min-height: $projects-item-size - 10;
+        padding: 25px;
+    }
+    &__btn{
+        align-self: center;
+    }
+    &__text{
+        margin: 10px 0;
+    }
+}

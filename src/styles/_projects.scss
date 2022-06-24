@@ -1,8 +1,11 @@
-.projects {
-
+.projects,.certificates, .contacts{
     &__heading{
         @include font($heading-text - 8, $plain-text-color, 500);
     }
+
+}
+
+.projects {
 
     &__item {
         width: $projects-item-size;

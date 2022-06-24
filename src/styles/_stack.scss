@@ -1,5 +1,6 @@
 .stack,
-.projects {
+.projects,
+.certificates {
     @extend %grid;
 
     &__body {
@@ -13,7 +14,6 @@
         @extend %flex;
         flex-wrap: wrap;
     }
-
     &__item {
         @extend %flex;
         flex-direction: column;
@@ -22,21 +22,29 @@
         border-radius: $heading-text;
         padding: 15px 10px;
     }
+    &__text {
+        @include font($plain-text, $plain-text-color, 500);
+        &--description {
+            margin: 25px 0;
+        }
+    }
+}
+
+.stack,
+.projects {
+
+    &__item {
+        padding: 15px 10px;
+    }
 
     &__img {
         background-color: #FFF;
         margin: 0 0 15px 0;
     }
 
-    &__text {
-        @include font($plain-text, $plain-text-color, 500);
-
-        &--description {
-            margin: 25px 0;
-        }
-    }
 }
-.stack{
+
+.stack {
     &__heading {
         @include font($heading-text, $plain-text-color, 500);
     }

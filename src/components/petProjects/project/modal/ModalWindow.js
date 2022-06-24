@@ -17,7 +17,7 @@ const ModalWindow = ({ item }) => {
 
     return (
         <>
-            <Button onClick={handleOpen}>Подробнее...</Button>
+            <Button variant="outlined" onClick={handleOpen}>Подробнее...</Button>
             <Modal
                 aria-labelledby="transition-modal-title"
                 aria-describedby="transition-modal-description"
@@ -40,8 +40,8 @@ const ModalWindow = ({ item }) => {
                         <Typography id="transition-modal-description" sx={{ mt: 2 }}>
                             Разработано для браузеров: {item[4]}
                         </Typography>
-                        <Button href={item[2]}>Посетить сайт</Button>
-                        <Button href={item[3]}>Посетить GitHub проекта</Button>
+                        <Button variant="outlined" href={item[2]}>Посетить сайт</Button>
+                        <Button variant="outlined" href={item[3]}>Посетить GitHub проекта</Button>
                     </Box>
                 </Fade>
             </Modal>

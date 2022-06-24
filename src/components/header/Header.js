@@ -37,10 +37,10 @@ const Header = () => {
                 <ScrollIntoView value="three" selector=".projects">
                     <Tab value="three" label="Работы" icon={<AutoStoriesIcon />} iconPosition="bottom" />
                 </ScrollIntoView>
-                <ScrollIntoView value="four" selector=".about">
+                <ScrollIntoView value="four" selector=".certificates">
                     <Tab value="four" label="Сертификаты" icon={<AssignmentTurnedInIcon />} iconPosition="bottom" />
                 </ScrollIntoView>
-                <ScrollIntoView value="five" selector=".about">
+                <ScrollIntoView value="five" selector=".contacts">
                     <Tab value="five" label="Контакты" icon={<ConnectWithoutContactIcon />} iconPosition="bottom" />
                 </ScrollIntoView>
             </Tabs>

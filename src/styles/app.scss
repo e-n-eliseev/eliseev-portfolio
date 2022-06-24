@@ -5,8 +5,14 @@
 @import "./stack";
 @import "./wave";
 @import "./projects";
+@import "./certificates";
+@import "./contacts";
 
-.about,.stack,.projects{
+.App{
+    padding-bottom: 50px;
+}
+
+.about,.stack,.projects, .certificate{
     min-height: 100vh;
     padding: 160px 0 0 0;
 }
