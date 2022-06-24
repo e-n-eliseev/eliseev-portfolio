@@ -14,8 +14,7 @@ const Header = () => {
 
     const [value, setValue] = useState("one");
 
-    const theme = useTheme();
-    const { flex, header } = theme;
+    const { flex, header } = useTheme();
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -35,7 +34,7 @@ const Header = () => {
                 <ScrollIntoView value="two" selector=".stack">
                     <Tab value="two" label="Скилы" icon={<FitnessCenterIcon />} iconPosition="bottom" />
                 </ScrollIntoView>
-                <ScrollIntoView value="three" selector=".about">
+                <ScrollIntoView value="three" selector=".projects">
                     <Tab value="three" label="Работы" icon={<AutoStoriesIcon />} iconPosition="bottom" />
                 </ScrollIntoView>
                 <ScrollIntoView value="four" selector=".about">

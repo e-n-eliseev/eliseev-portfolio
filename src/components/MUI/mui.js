@@ -34,6 +34,18 @@ export const theme = createTheme({
                 },
             },
         },
+        MuiTypography: {
+            styleOverrides: {
+                root: {
+                    color: "#666666"
+                },
+                body1: {
+                    margin: "15px 0",
+                    fontSize: "14px",
+                    fontWeight: "500",
+                }
+            },
+        },
     },
     base: {
         padding: "10px",
@@ -52,7 +64,18 @@ export const theme = createTheme({
         backgroundColor: '#FFFFFF',
         zIndex: 1
     },
-    aboutContainer: {
-
+    modal: {
+        position: 'absolute',
+        flexDirection: "column",
+        alignItems: "center",
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: 375,
+        bgcolor: 'background.paper',
+        border: '2px solid #009D9D',
+        boxShadow: "0 0 20px rgba(0, 0, 0, 0.2)",
+        borderRadius: "14px",
+        p: 4,
     }
 });

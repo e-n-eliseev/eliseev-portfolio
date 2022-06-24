@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import "./styles/app.scss";
 import { lazy } from "react";
 const TechStack = lazy(() => import("./components/techStack/TechStack"));
+const PetProjects = lazy(() => import("./components/petProjects/PetProjects"));
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <About />
       <TechStack />
+      <PetProjects />
     </div>
   );
 }

@@ -1,22 +1,22 @@
-import { flipInX } from 'react-animations';
-import Radium, { StyleRoot } from 'radium';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 const StackItem = ({ item }) => {
-    const styles = {
-        flipInX: {
-            animation: 'x 1s',
-            animationName: Radium.keyframes(flipInX, 'flip')
-        }
-    }
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000
+        });
+    }, []);
+
     return (
-        < StyleRoot>
-            <figure className="stack__item" style={styles.flipInX}>
-                <img className="stack__img" src={item[0]} alt="Technology avatar" />
-                <figcaption>
-                    <p className="stack__text">{item[1]}</p>
-                </figcaption>
-            </figure>
-        </StyleRoot>
+        <figure className="stack__item" data-aos="flip-left" >
+            <img className="stack__img" src={item[0]} alt="Technology avatar" />
+            <figcaption>
+                <p className="stack__text">{item[1]}</p>
+            </figcaption>
+        </figure>
     )
 }
 

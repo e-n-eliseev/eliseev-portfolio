@@ -1,9 +1,12 @@
-.stack {
+.stack,
+.projects {
     @extend %grid;
+
     &__body {
         grid-column: 2/3;
         text-align: center;
         padding: 0 10px;
+        justify-content: space-between
     }
 
     &__wrapper {
@@ -11,30 +14,48 @@
         flex-wrap: wrap;
     }
 
+    &__item {
+        @extend %flex;
+        flex-direction: column;
+        margin: 10px;
+        box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.2);
+        border-radius: $heading-text;
+        padding: 15px 10px;
+    }
+
+    &__img {
+        background-color: #FFF;
+        margin: 0 0 15px 0;
+    }
+
+    &__text {
+        @include font($plain-text, $plain-text-color, 500);
+
+        &--description {
+            margin: 25px 0;
+        }
+    }
+}
+.stack{
     &__heading {
         @include font($heading-text, $plain-text-color, 500);
     }
 
     &__item {
-        @extend %flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 10px;
-        box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.2);
-        border-radius: $heading-text;
-        padding: 15px 10px;
         width: $stack-item-size;
         height: $stack-item-size + 25;
     }
 
     &__img {
         width: $stack-ava-size;
+        height: $stack-ava-size;
     }
 
     &__text {
         @include font($plain-text, $plain-text-color, 500);
-        &--description{
-            margin:25px 0;
+
+        &--description {
+            margin: 25px 0;
         }
     }
 }

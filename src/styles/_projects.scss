@@ -1,0 +1,24 @@
+.projects {
+
+    &__heading{
+        @include font($heading-text - 8, $plain-text-color, 500);
+    }
+
+    &__item {
+        width: $projects-item-size;
+        height: $projects-item-size + 25;
+    }
+    &__description{
+        @extend %flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__img {
+        width: $projects-ava-size;
+        height: $projects-ava-size * 0.625;
+        border-radius: $plain-text;
+        @include shadow(0px, 4px, 20px, rgba(108, 94, 57, 0.6));
+    }
+}
