@@ -8,6 +8,7 @@ import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import AssignmentTurnedInIcon from '@mui/icons-material/AssignmentTurnedIn';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import { useState } from 'react';
+import ScrollIntoView from 'react-scroll-into-view'
 
 const Header = () => {
 
@@ -28,11 +29,21 @@ const Header = () => {
                 textColor="primary"
                 indicatorColor="secondary"
             >
-                <Tab value="one" label="Обо мне" icon={<AccountBoxIcon />} iconPosition="bottom" />
-                <Tab value="two" label="Скилы" icon={<FitnessCenterIcon />} iconPosition="bottom" />
-                <Tab value="three" label="Работы" icon={<AutoStoriesIcon />} iconPosition="bottom" />
-                <Tab value="four" label="Сертификаты" icon={<AssignmentTurnedInIcon />} iconPosition="bottom" />
-                <Tab value="five" label="Контакты" icon={<ConnectWithoutContactIcon />} iconPosition="bottom" />
+                <ScrollIntoView value="one" selector=".about">
+                    <Tab value="one" label="Обо мне" icon={<AccountBoxIcon />} iconPosition="bottom" />
+                </ScrollIntoView>
+                <ScrollIntoView value="two" selector=".stack">
+                    <Tab value="two" label="Скилы" icon={<FitnessCenterIcon />} iconPosition="bottom" />
+                </ScrollIntoView>
+                <ScrollIntoView value="three" selector=".about">
+                    <Tab value="three" label="Работы" icon={<AutoStoriesIcon />} iconPosition="bottom" />
+                </ScrollIntoView>
+                <ScrollIntoView value="four" selector=".about">
+                    <Tab value="four" label="Сертификаты" icon={<AssignmentTurnedInIcon />} iconPosition="bottom" />
+                </ScrollIntoView>
+                <ScrollIntoView value="five" selector=".about">
+                    <Tab value="five" label="Контакты" icon={<ConnectWithoutContactIcon />} iconPosition="bottom" />
+                </ScrollIntoView>
             </Tabs>
         </Box >
     );

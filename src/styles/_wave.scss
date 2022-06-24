@@ -1,0 +1,49 @@
+.wave {
+    @extend %grid;
+    background: #FFF;
+    width: 100%;
+    height: 300px;
+    align-self: flex-end;
+}
+.wave{
+    &__wrapper{
+        grid-column: 2/3;
+    }
+    &__body {
+        stroke-linecap: round;
+            stroke-opacity: 0.7;
+        }
+       &__body path {
+            transform-origin: center;
+        }
+        &__body path:nth-child(6n + 1) {
+            stroke:$wave-color-1;
+        }
+        &__body path:nth-child(6n + 2) {
+            stroke: $focused-text-color;
+        }
+        &__body path:nth-child(6n + 3) {
+            stroke:$wave-color-2 ;
+        }
+        &__body path:nth-child(6n + 4) {
+            stroke: $gradient-text-color;
+        }
+        &__body path:nth-child(1) {
+            stroke-width: 24;
+            animation: wave 35s linear 1.4s infinite;
+        } 
+        &__body path:nth-child(2) {
+            stroke-width: 21;
+            animation: wave 35s linear 2.8s infinite;
+        }
+        &__body path:nth-child(3) {
+            stroke-width: 48;
+            animation: wave 35s linear 4.2s infinite;
+        }
+        &__body path:nth-child(4) {
+            stroke-width: 41;
+            animation: wave 35s linear 5.6s infinite;
+        }
+         
+}
+

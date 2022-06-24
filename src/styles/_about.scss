@@ -1,9 +1,7 @@
 .about {
-    min-height: 100vh;
     @extend %flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 160px 0 0 0;
     text-align: center;
     padding: 0 10px;
 

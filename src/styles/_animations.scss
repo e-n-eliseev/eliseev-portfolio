@@ -17,17 +17,18 @@
         background-position: 100% 50%
     }
 }
-.left-enter,.right-enter{
-    opacity: 0;
-}
-.left-enter {
-    transform: translateX(-600px);
-}
-.right-enter {
-    transform: translateX(600px);
-}
-.right-enter-active,.left-enter-active {
-    transform: translateX(0);
-    opacity: 1;
-    transition: all 500ms ease-in;
+
+@keyframes wave {
+    0% {
+        transform: rotateX(0deg) skewY(0deg);
+        stroke-opacity: 0.7;
+    }
+    50% {
+        transform: rotateX(360deg) skewY(8deg);
+        stroke-opacity: 1;
+    }
+    100% {
+        transform: rotateX(0deg) skewY(0deg);
+        stroke-opacity: 0.7;
+    }
 }

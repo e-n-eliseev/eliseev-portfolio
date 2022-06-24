@@ -8,6 +8,10 @@
     align-items: center;
     justify-content: center;
 }
+%grid{
+    display: grid;
+    grid-template: 1fr/1fr minmax(auto,1200px)1fr;
+}
 @mixin font($size,$color,$weight) {
     font-size:$size;
     color: $color;

@@ -2,3 +2,10 @@
 @import "./mixins";
 @import "./about";
 @import "./animations";
+@import "./stack";
+@import "./wave";
+
+.about,.stack{
+    min-height: 100vh;
+    padding: 160px 0 0 0;
+}
