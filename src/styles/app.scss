@@ -16,3 +16,9 @@
     min-height: 100vh;
     padding: 170px 0 0 0;
 }
+
+@media (min-width:1750px){
+    .about,.stack,.projects,.certificates{
+        min-height: 1000px;
+    }
+}
