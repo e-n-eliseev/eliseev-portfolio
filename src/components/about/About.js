@@ -6,8 +6,8 @@ const About = () => {
 
     return (
         <section className='about'>
-            <Photo />
             <Introducion />
+            <Photo />
             <Waves />
         </section >
     )

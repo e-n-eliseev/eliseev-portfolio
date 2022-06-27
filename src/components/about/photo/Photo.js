@@ -1,20 +1,19 @@
 import pic from "../../../assets/ava.jpg";
-import { bounceIn } from 'react-animations';
+import { bounceInLeft } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 
 
 const Photo = () => {
 
     const styles = {
-        bounceIn: {
-            animation: 'x 1s',
-            animationName: Radium.keyframes(bounceIn, 'bounce')
+        bounceInLeft: {
+            animation: 'x 3s',
+            animationName: Radium.keyframes(bounceInLeft, 'bounce')
         }
     }
-
     return (
         <StyleRoot>
-            <div className='about__photo' style={styles.bounceIn} >
+            <div className='about__photo' style={styles.bounceInLeft} >
                 <div className='about__photo-wrapper'>
                     <img className='about__img' src={`${pic}`} alt='My avatar' />
                 </div>
