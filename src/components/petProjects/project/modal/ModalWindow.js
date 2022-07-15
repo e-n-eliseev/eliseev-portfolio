@@ -19,8 +19,8 @@ const ModalWindow = ({ item }) => {
         <>
             <Button variant="outlined" onClick={handleOpen}>Подробнее...</Button>
             <Modal
-                aria-labelledby="transition-modal-title"
-                aria-describedby="transition-modal-description"
+                aria-labelledby="Описание проекта"
+                aria-describedby="Подробное описание проекта, используемых технологий и поддерживаемых браузерах."
                 open={open}
                 onClose={handleClose}
                 closeAfterTransition
