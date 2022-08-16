@@ -11,6 +11,7 @@ import JEST from "./assets/JEST.svg";
 import WebPack from "./assets/WebPack.svg";
 import NodeJS from "./assets/NodeJs.svg";
 import TS from "./assets/TS.svg";
+import Next from "./assets/NEXT.svg";
 
 export const techStack = [
     [HTML, "HTML"],
@@ -20,10 +21,11 @@ export const techStack = [
     [VUE, "VUE"],
     [REACT, "REACT"],
     [REDUX, "REDUX"],
+    [TS, "TypeScript"],
+    [Next, "NextJs"],
     [MUI, "MUI"],
     [GIT, "GIT"],
     [JEST, "JEST"],
     [WebPack, "WebPack"],
     [NodeJS, "NodeJS"],
-    [TS, "TypeScript"],
 ]
