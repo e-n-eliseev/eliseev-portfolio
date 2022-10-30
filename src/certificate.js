@@ -9,4 +9,5 @@ export const certificate = [
     ["React", "GeekBrains", "React и его концепции. Жизненый цикл, роутинг, Redux. Работа с API, FireBase. Оптимизация и тестирование приложений.", "https://gb.ru/go/1w2BVI"],
     ["NodeJs", "GeekBrains", "работа с файловой системой, цикл событий, создание и настройка сервера, Socket.io", "https://gb.ru/go/E9l1Ou"],
     ["Основы реляционных баз данных. MySQL", "GeekBrains", "CRUD операции, агрегация данных, составные запросы, транзакции", "https://gb.ru/go/6yxHdV"],
+    ["TypeScript", "GeekBrains", "типизация данных, классы и ООП, обобщенное программирование", "https://gb.ru/go/zUouK8"],
 ]
